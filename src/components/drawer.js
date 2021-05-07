@@ -30,7 +30,7 @@ export default function Drawer ({
         {...props}
       >
         {closeButton && (
-          <Box as="div" onClick={toggleHandler}>
+          <Box as="div" onClick={toggleHandler} sx={closeBtnStyle}>
             {closeButton}
           </Box>
         )}                        
