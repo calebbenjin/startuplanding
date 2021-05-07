@@ -36,8 +36,31 @@ const data = {
 };
 
 export default function ServiceSection() {
+
+  const handleClick = (e) => {
+    e.preventDefault()
+
+    setVideoButton(true)
+  }
   return (
-    <h1>Service Section</h1>
+    <section sx={{ variant: 'section.services' }}>
+      <Container sx={styles.containerBox}>
+        <Box sx={styles.thumbnail}>
+          <Image src={ServiceThumb} alt="Thumbnail" />
+          <Button
+            sx={styles.videoBtn}
+            onClick={handleClick}
+            aria-label="Play Button"
+          ><span><IoIosPlay/></span></Button>
+          <Box sx={styles.shapeBox}>
+            <Image src={shapePattern} alt="shape" />
+          </Box>
+          <Box sx={styles.containerBox}>
+            <TextFeature subTitle={data.subTitle} title={data.title}  />
+          </Box>
+        </Box>
+      </Container>
+    </section>
   );
 }
 
