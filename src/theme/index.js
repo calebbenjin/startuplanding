@@ -290,7 +290,7 @@ export default {
       variant: 'buttons.defaultBtn',
       backgroundColor: 'transparent',
       cursor: 'pointer',
-      color: 'white',
+      color: '#333',
       svg: {
         fontSize: [4, 6],
         mr: 2,
