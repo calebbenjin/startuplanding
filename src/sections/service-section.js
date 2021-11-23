@@ -14,13 +14,13 @@ import Secure from 'assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  title: 'Industry expertise',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'e-commerce solutions',
+      title: 'e-commerce solutions',
       text:
         'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
     },
@@ -75,12 +75,12 @@ export default function ServiceSection() {
         </Box>
       </Container>
 
-      <ModalVideo sx={styles} 
+      {/* <ModalVideo sx={styles} 
         channel="youtube"
         isOpen={videoOpen}
         videoId="iTZ1-85I77c"
         onClose={() => setVideoOpen(false)}
-       />
+       /> */}
     </section>
   );
 }

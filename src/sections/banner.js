@@ -1,26 +1,26 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
+
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 
-export default function Banner() {
+export default function Banner({ title, span, des, image}) {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products to Explore
+            {title}<span sx={styles.banner.span}>{span}</span>
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Check our website to find great software and deals! If you need a website or web application this is the place to go!
+            {des}
           </Text>
           <Button variant="primary">Explore</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="Banner" />
+          <Image src={image} alt="Banner" />
         </Box>
       </Container>
     </section>
@@ -58,6 +58,9 @@ const styles = {
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '32%',
+    },
+    span: {
+      color: 'primary'
     },
     container: {
       minHeight: 'inherit',

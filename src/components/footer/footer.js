@@ -25,7 +25,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} <b>ReactAvacado</b>🥑🥑🥑
+            Copyright by {new Date().getFullYear()} <b>calebbenjin</b>🥑🥑🥑
           </Text>
           <Text sx={styles.footer.copyright}>
             Designed by <b>Calebbenjin</b>

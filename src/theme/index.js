@@ -3,7 +3,7 @@ export default {
   colors: {
     text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
-    heading: '#0F2137', // primary heading color
+    heading: '#2D3748', // primary heading color
     heading_secondary: '#0F2137', // heading color
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
@@ -35,14 +35,14 @@ export default {
     '1620px',
   ],
   fonts: {
-    body: "'DM Sans', sans-serif",
-    heading: "'DM Sans', sans-serif",
+    body: "'Inter', sans-serif",
+    heading: "'Inter', sans-serif;",
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],
   fontWeights: {
     body: 'normal',
-    heading: 500,
-    bold: 700,
+    heading: 800,
+    bold: 800,
   },
   lineHeights: {
     body: 1.8,
@@ -126,6 +126,7 @@ export default {
       textAlign: 'center',
       fontWeight: '700',
       letterSpacing: '-.5px',
+      textTransform: 'capitalize',
     },
 
     subTitle: {
@@ -161,7 +162,7 @@ export default {
         '66px',
       ],
       lineHeight: [1.3, null, null, null, null, 1.2],
-      fontWeight: 700,
+      fontWeight: 900,
       mb: [4, null, null, null, null, 5],
     },
     heroSecondary: {
@@ -182,7 +183,7 @@ export default {
     },
     lead: {
       fontSize: 40,
-      fontFamily: 'DM Sans',
+      fontFamily: 'Inter',
       fontWeight: '500',
       lineHeight: '60px',
       letterSpacing: '-1.5px',
@@ -229,6 +230,7 @@ export default {
     },
     logo: {
       display: 'flex',
+      textDecoration: 'none',
     },
   },
   images: {

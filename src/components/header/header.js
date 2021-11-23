@@ -2,6 +2,7 @@
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
+import Linki from 'next/link'
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
 import MobileDrawer from './mobile-drawer';
@@ -14,10 +15,11 @@ export default function Header({ className }) {
         <Logo src={LogoDark} />
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((item, i) => (
-            <Link activeClass="active" to={item.path} spy={true} smooth={true} offset={-70} duration={500} key={i}>
+            <Link to={item.path} spy={true} smooth={true} offset={-70} duration={500} key={i}>
             {item.label}
             </Link>
           ))}
+          <Linki  href="/artificial"><a>Artificial Intelligence</a></Linki>
         </Flex>
         <Button className="donate__btn" variant="secondary" aria-label="Get Started">
           Get Started
@@ -53,6 +55,7 @@ const styles = {
     backgroundColor: 'transparent',
     transition: 'all 0.4s ease',
     animation: `${positionAnim} 0.4s ease`,
+
     '.donate__btn': {
       flexShrink: 0,
       mr: [15, 20, null, null, 0],
@@ -87,6 +90,8 @@ const styles = {
       cursor: 'pointer',
       lineHeight: '1.2',
       transition: 'all 0.15s',
+      color: '#333',
+      textDecoration: 'none',
       '&:hover': {
         color: 'primary',
       },
