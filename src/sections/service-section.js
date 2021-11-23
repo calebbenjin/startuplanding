@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import TextFeature from 'components/text-feature';
-import ModalVideo from 'react-modal-video';
+// import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 
 import ServiceThumb from 'assets/service-thumb.png';
