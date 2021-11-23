@@ -36,13 +36,13 @@ const data = {
 };
 
 export default function ServiceSection() {
-  // const [videoOpen, setVideoOpen] = useState(false)
+  const [videoOpen, setVideoOpen] = useState(false)
 
-  // const handleClick = (e) => {
-  //   e.preventDefault()
+  const handleClick = (e) => {
+    e.preventDefault()
 
-  //   setVideoOpen(true)
-  // }
+    setVideoOpen(true)
+  }
   return (
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
